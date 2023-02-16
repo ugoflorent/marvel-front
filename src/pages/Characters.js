@@ -24,21 +24,25 @@ const Characters = () => {
     <p>Loading ...</p>
   ) : (
     <div>
-      <img src={logo} alt="" />
+      {/* <img src={logo} alt="" /> */}
       {data.results.map((character) => {
         return (
-          <button>
-            <article key={character._id}>
-              <p>{character.name}</p>
-              <p>{character.description}</p>
-              <img
-                src={
-                  character.thumbnail.path + "." + character.thumbnail.extension
-                }
-                alt="character"
-              />
-            </article>
-          </button>
+          <div className="card-characters">
+            <button>
+              <article key={character._id}>
+                <p>{character.name}</p>
+                <p>{character.description}</p>
+                <img
+                  src={
+                    character.thumbnail.path +
+                    "." +
+                    character.thumbnail.extension
+                  }
+                  alt="character"
+                />
+              </article>
+            </button>
+          </div>
         );
       })}
     </div>

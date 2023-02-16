@@ -1,0 +1,75 @@
+header {
+  height: 250px;
+  background-color: black;
+  border: solid 3px black;
+  text-align: center;
+}
+
+.header button {
+  height: 40px;
+  width: 150px;
+  background-color: #ee171f;
+  color: white;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+header img {
+  margin-top: 15px;
+  display: flex;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.header-input {
+  height: 30px;
+  width: 150px;
+  background-color: #ee171f;
+  color: white;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+.card-characters {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 650px;
+  width: 450px;
+}
+
+.card-characters img {
+  height: 350px;
+  width: 90%;
+  object-fit: cover;
+  margin: 5px 5px 15px 5px;
+  border-radius: 5px;
+}
+
+.card-characters p {
+  text-align: justify;
+  margin: 5px 5px 5px 15px;
+}
+
+.comics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 650px;
+  width: 450px;
+}
+
+.comics img {
+  height: 350px;
+  width: 95%;
+  object-fit: cover;
+  margin: 5px 5px 15px 5px;
+  border-radius: 5px;
+}
+
+.comics p {
+  text-align: justify;
+  margin: 5px 5px 5px 15px;
+}

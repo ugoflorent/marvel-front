@@ -23,19 +23,21 @@ const Comics = () => {
     <p>Loading ...</p>
   ) : (
     <div>
-      <img src={logo} alt="" />
+      {/* <img src={logo} alt="" /> */}
       {data.results.map((comics) => {
         return (
-          <button>
-            <article key={comics._id}>
-              <p>{comics.title}</p>
-              <p>{comics.description}</p>
-              <img
-                src={comics.thumbnail.path + "." + comics.thumbnail.extension}
-                alt="comics"
-              />
-            </article>
-          </button>
+          <div className="comics">
+            <button>
+              <article key={comics._id}>
+                <p>{comics.title}</p>
+                <p>{comics.description}</p>
+                <img
+                  src={comics.thumbnail.path + "." + comics.thumbnail.extension}
+                  alt="comics"
+                />
+              </article>
+            </button>
+          </div>
         );
       })}
     </div>
