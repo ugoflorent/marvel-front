@@ -23,23 +23,24 @@ const Characters = () => {
   return isLoading ? (
     <p>Loading ...</p>
   ) : (
-    <div>
+    <div className="characters-content">
       {/* <img src={logo} alt="" /> */}
       {data.results.map((character) => {
         return (
-          <div className="card-characters">
+          <div>
             <button>
               <article key={character._id}>
                 <p>{character.name}</p>
-                <p>{character.description}</p>
                 <img
                   src={
                     character.thumbnail.path +
-                    "." +
+                    "/portrait_uncanny." +
                     character.thumbnail.extension
                   }
                   alt="character"
                 />
+
+                <p>{character.description}</p>
               </article>
             </button>
           </div>

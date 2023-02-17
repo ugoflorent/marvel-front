@@ -32,44 +32,39 @@ header img {
   border-radius: 5px;
 }
 
-.card-characters {
+.characters-content {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+
   height: 650px;
   width: 450px;
-}
-
-.card-characters img {
-  height: 350px;
-  width: 90%;
-  object-fit: cover;
-  margin: 5px 5px 15px 5px;
-  border-radius: 5px;
-}
-
-.card-characters p {
-  text-align: justify;
-  margin: 5px 5px 5px 15px;
 }
 
 .comics {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 650px;
+  height: 850px;
   width: 450px;
 }
 
 .comics img {
-  height: 350px;
-  width: 95%;
-  object-fit: cover;
-  margin: 5px 5px 15px 5px;
   border-radius: 5px;
 }
 
 .comics p {
   text-align: justify;
   margin: 5px 5px 5px 15px;
+}
+
+.comics-content {
+  display: flex;
+  justify-content: center;
+}
+
+.characters-content {
+  display: flex;
+}
+
+.characters-content img {
+  border-radius: 5px;
 }
